@@ -7,10 +7,10 @@ from ..items import VnexpressItem
 class PaperSpider(CrawlSpider):
     name = "paper"
     domain = 'https://vnexpress.net'
-    start_urls = ['https://vnexpress.net/thoi-su-p2']
+    start_urls = ['https://vnexpress.net/thoi-su-p10']
 
     rules = (
-        Rule(LinkExtractor(allow=r"thoi-su-p[2-50]"),
+        Rule(LinkExtractor(allow=r"thoi-su-p[10-30]"),
              callback="get_links", follow=True),
     )
 
