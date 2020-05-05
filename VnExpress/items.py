@@ -13,3 +13,6 @@ class VnexpressItem(scrapy.Item):
     title = scrapy.Field()
     content = scrapy.Field()
     publish_date = scrapy.Field()
+    author = scrapy.Field()
+    description = scrapy.Field()
+    topic = scrapy.Field()
